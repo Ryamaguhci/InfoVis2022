@@ -1,0 +1,29 @@
+<html>
+    <html lang="ja">
+    <head>
+        <title>W02: task 03</title>
+    </head>
+    <body>
+        <script src = "vec3.js"></script>
+        <script src = "AreaOfTriangle.js"></script>
+            <input type="number" id="x1">
+            <input type="number" id="y1">
+            <input type="number" id="z1"><br>
+            <input type="number" id="x2">
+            <input type="number" id="y2">
+            <input type="number" id="z2"><br>
+            <input type="number" id="x3">
+            <input type="number" id="y3">
+            <input type="number" id="z3"><br>
+            <input type="button" value="return" onclick="clickBtn()">
+        <script>            
+            function clickBtn(){
+                var v1 = new Vec3(x1.value,y1.value,z1.value)
+                var v2 = new Vec3(x2.value,y2.value,z2.value)
+                var v3 = new Vec3(x3.value,y3.value,z3.value)
+                var area = AreaOfTriangle(v1,v2,v3)
+                document.write(area)
+            }
+        </script>
+    </body>
+</html>
