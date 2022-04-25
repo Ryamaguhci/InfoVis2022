@@ -3,13 +3,14 @@
         <title>W04: Example 12</title>
     </head>
     <body>
+		Japanese Population by Prefecture
 	<script src="https://d3js.org/d3.v4.min.js"></script>
-	<svg xmlns="http://www.w3.org/2000/svg" width="400" height="200" viewBox="-50 -50 400 200"></svg>
+	<svg id = "s",xmlns="http://www.w3.org/2000/svg" width="4000" height="4000" viewBox="-50 -50 4000 4000"></svg>
     <script>
-	var svg = d3.select("body").append("svg");
+	var svg = d3.select("#s").append("svg");
     var padding = 50;
 	var height = 50;
-    d3.csv("https://Ryamaguhci.github.io/InfoVis2022/W04/w04_task2.csv", function(data){
+    d3.csv("https://Ryamaguhci.github.io/InfoVis2022/W04/task02.csv", function(data){
 	    svg.selectAll("rect")
 		.data(data)
 	    .enter()
