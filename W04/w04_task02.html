@@ -8,8 +8,8 @@
 	<svg id = "s",xmlns="http://www.w3.org/2000/svg" width="4000" height="4000" viewBox="-50 -50 4000 4000"></svg>
     <script>
 	var svg = d3.select("#s").append("svg");
-    var padding = 50;
-	var height = 50;
+    var padding = 30;
+	var height = 30;
     d3.csv("https://Ryamaguhci.github.io/InfoVis2022/W04/task02.csv", function(data){
 	    svg.selectAll("rect")
 		.data(data)
@@ -17,14 +17,14 @@
 	    .append("rect")
 	    .attr("x",padding)
         .attr("y", function(d,i){ return i * (height+10); })
-	    .attr("width", function(d){ return d.width; })
+	    .attr("width", function(d){ return d.population; })
 	    .attr("height", height)
 	    .style("fill", function(d){ return d.color; });
         svg.selectAll("text")
 		.data(data)
 		.enter()
 		.append("text")
-		.text(function(d) {return d.color;})
+		.text(function(d) {return d.prefecture;})
 		.attr("text-anchor", "start")
 		.attr("x", function(d, i) {return padding-40})
 		.attr("y", function(d,i){ return 15 +  i * ( height+10); })
