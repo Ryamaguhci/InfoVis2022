@@ -1,4 +1,4 @@
-d3.csv("https://vizlab-kobe-lecture.github.io/InfoVis2021/W04/data.csv")
+d3.csv("https://Ryamaguhci.github.io/InfoVis2022/W06/task02.csv")
     .then( data => {
         data.forEach( d => { d.x = +d.x; d.y = +d.y; });
         var config = {
@@ -48,7 +48,7 @@ class ScatterPlot {
             
 
         self.xaxis = d3.axisBottom( self.xscale )
-            .ticks(10);
+            .ticks(12);
 
         self.xaxis_group = self.chart.append('g')
             .attr('transform', `translate(0, ${self.inner_height})`);
@@ -69,11 +69,11 @@ class ScatterPlot {
 
         const xmin = d3.min( self.data, d => d.x );
         const xmax = d3.max( self.data, d => d.x );
-        self.xscale.domain( [0, xmax+20] );
+        self.xscale.domain( [0, xmax+1] );
 
         const ymin = d3.min( self.data, d => d.y );
         const ymax = d3.max( self.data, d => d.y );
-        self.yscale.domain( [0, ymax + 20] );
+        self.yscale.domain( [0, ymax+5] );
  
         self.render();
     }
@@ -98,7 +98,7 @@ class ScatterPlot {
             .attr("text-anchor", "middle")
             .attr("font-size", "10pt")
             .attr("font-weight", "bold")
-            .text("X label")
+            .text("month")
 
         self.yaxis_group
             .call( self.yaxis )
@@ -110,16 +110,16 @@ class ScatterPlot {
             .attr("text-anchor", "middle")
             .attr("font-size", "10pt")
             .attr("font-weight", "bold")
-            .text("Y label")
+            .text("mean temperature[degree Celsius]")
         
         self.title
             .append('text')
             .attr("fill", "black")
             .attr("x", (self.inner_width - self.config.margin.left - self.config.margin.right) / 2 + self.config.margin.left)
-            .attr("y", -100)
+            .attr("y", -120)
             .attr("text-anchor", "middle")
             .attr("font-size", "10pt")
             .attr("font-weight", "bold")
-            .text("Title")
+            .text("monthly mean temperature at Kyoto(2021)")
     }
 }
