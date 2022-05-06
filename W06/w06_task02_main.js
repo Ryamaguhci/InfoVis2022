@@ -1,12 +1,11 @@
 d3.csv("https://vizlab-kobe-lecture.github.io/InfoVis2021/W04/data.csv")
     .then( data => {
         data.forEach( d => { d.x = +d.x; d.y = +d.y; });
-
         var config = {
             parent: '#drawing_region',
             width: 512,
             height: 256,
-            margin: {top:40, right:40, bottom:40, left:40}
+            margin: {top:40, right:20, bottom:40, left:80}
         };
 
         const scatter_plot = new ScatterPlot( config, data );
@@ -45,7 +44,7 @@ class ScatterPlot {
             
 
         self.yscale = d3.scaleLinear()
-            .range( [0,self.inner_height] );
+            .range( [self.inner_height, 0] );
             
 
         self.xaxis = d3.axisBottom( self.xscale )
@@ -59,6 +58,10 @@ class ScatterPlot {
 
         self.yaxis_group = self.chart.append('g')
             .attr('transform', `translate(" + 0 + "," + (self.inner_height - self.config.margin.top) + ")`);
+
+        self.title = self.chart.append('g')
+            .attr('transform', `translate(0,100)`)
+        
     }
 
     update() {
@@ -66,11 +69,11 @@ class ScatterPlot {
 
         const xmin = d3.min( self.data, d => d.x );
         const xmax = d3.max( self.data, d => d.x );
-        self.xscale.domain( [0, 200] );
+        self.xscale.domain( [0, xmax+20] );
 
         const ymin = d3.min( self.data, d => d.y );
         const ymax = d3.max( self.data, d => d.y );
-        self.yscale.domain( [0, 100] );
+        self.yscale.domain( [0, ymax + 20] );
  
         self.render();
     }
@@ -84,12 +87,39 @@ class ScatterPlot {
             .append("circle")
             .attr("cx", d => self.xscale( d.x ) )
             .attr("cy", d => self.yscale( d.y ) )
-            .attr("r", d => d.r );
+            .attr("r", d => d.r);
         
         self.xaxis_group
-            .call( self.xaxis );
+            .call( self.xaxis )
+            .append('text')
+            .attr("fill", "black")
+            .attr("x", (self.inner_width - self.config.margin.left - self.config.margin.right) / 2 + self.config.margin.left)
+            .attr("y", 35)
+            .attr("text-anchor", "middle")
+            .attr("font-size", "10pt")
+            .attr("font-weight", "bold")
+            .text("X label")
 
         self.yaxis_group
-            .call( self.yaxis );
+            .call( self.yaxis )
+            .append('text')
+            .attr("fill", "black")
+            .attr("x", -(self.inner_height - self.config.margin.top - self.config.margin.bottom) / 2 - self.config.margin.top)
+            .attr("y", -35)
+            .attr("transform", "rotate(-90)")
+            .attr("text-anchor", "middle")
+            .attr("font-size", "10pt")
+            .attr("font-weight", "bold")
+            .text("Y label")
+        
+        self.title
+            .append('text')
+            .attr("fill", "black")
+            .attr("x", (self.inner_width - self.config.margin.left - self.config.margin.right) / 2 + self.config.margin.left)
+            .attr("y", -100)
+            .attr("text-anchor", "middle")
+            .attr("font-size", "10pt")
+            .attr("font-weight", "bold")
+            .text("Title")
     }
 }
