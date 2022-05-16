@@ -1,4 +1,4 @@
-d3.csv("https://shiraishikakeru.github.io/InfoVis2022/W08/w08_task01.csv")
+d3.csv("https://Ryamaguhci.github.io/InfoVis2022/W08/w08_task01.csv")
     .then( data => {
         data.forEach( d => { d.value = +d.value; d.label = d.label; });
         var config = {
@@ -8,7 +8,7 @@ d3.csv("https://shiraishikakeru.github.io/InfoVis2022/W08/w08_task01.csv")
             margin: {top:50, right:10, bottom:50, left:100},
             title: 'task01',
             xlabel: 'xlabel',
-            ylabel: 'ylabel'
+            ylabel: 'fruit'
         };
         const bar_chart = new BarChart( config, data );
         bar_chart.update();
