@@ -16,7 +16,7 @@ var svg = d3.select('#drawing_region')
 const area = d3.area()
       .x( d => d.x )
       .y1( d => d.y )
-      .y0( 0 );
+      .y0( d3.max(self.data, d => d.y )  );
 
 svg.append('path')
     .attr('d', area(data))
