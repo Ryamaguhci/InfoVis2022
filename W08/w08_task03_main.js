@@ -1,4 +1,4 @@
-d3.csv("https://Ryamaguhci.github.io/InfoVis2022/W08/w08_task01.csv")
+d3.csv("https://Ryamaguhci.github.io/InfoVis2022/W08/w08_task03.csv")
     .then( data => {
         data.forEach( d => { d.value = +d.value; d.label = d.label; });
 
@@ -36,7 +36,7 @@ class PieChart {
             .append('g')
             .attr('transform', `translate(${self.config.width/2}, ${self.config.height/2})`);
 
-        self.radius = Math.min( self.config.width, self.config.height ) / 2;
+        self.radius = (Math.min( self.config.width, self.config.height ) - 2) / 2;
 
         self.pie = d3.pie()
             .value(d => d.value);
