@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>W04: Example 12</title>
+    </head>
+    <body>
+		Japanese Population by Prefecture(10000  people)
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<svg id = "s",xmlns="http://www.w3.org/2000/svg" width="4000" height="4000" viewBox="-50 -50 4000 4000"></svg>
+    <script>
+	var svg = d3.select("#s").append("svg");
+    var padding = 90;
+	var height = 40;
+    d3.csv("https://Ryamaguhci.github.io/InfoVis2022/W04/task02.csv", function(data){
+	    svg.selectAll("rect")
+		.data(data)
+	    .enter()
+	    .append("rect")
+	    .attr("x",padding+100)
+        .attr("y", function(d,i){ return i * (height+10); })
+	    .attr("width", function(d){ return d.population; })
+	    .attr("height", height)
+	    .style("fill", function(d){ return d.color; });
+        svg.selectAll("text")
+		.data(data)
+		.enter()
+		.append("text")
+		.text(function(d) {return d.prefecture+d.population;})
+		.attr("text-anchor", "start")
+		.attr("x", function(d, i) {return padding-90})
+		.attr("y", function(d,i){ return 15 +  i * ( height+10); })
+		.attr("font-family", "sans-serif")
+		.attr("font-size", "16px")
+		.attr("fill", "black");
+	 } );	 
+	</script>
+    </body>
+</html>

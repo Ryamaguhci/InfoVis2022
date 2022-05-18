@@ -1,11 +1,6 @@
 x,y,r,color
-24,24,24,green
-32,32,32,green
-24,26,25,red
-28,28,29,green
-32,34,33,red
-18,18,18,green
-16,18,18,red
-18,18,19,green
-24,24,24,green
-20,20,21,green
+20,20,10,green
+100,50,20,green
+70,80,30,red
+170,30,40,green
+150,70,50,blue

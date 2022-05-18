@@ -21,13 +21,13 @@ circles
     .on('mouseover', (e,d) => {
         d3.select('#tooltip')
             .style('opacity', 1)
-            .html(`<div class="tooltip-label">Position</div>(${d.x}, ${d.y})`);
+            .html(`<div class="tooltip-label">Position</div>(${d.x}, ${d.y}, ${d.r})`);
     })
     .on('mousemove', (e) => {
         const padding = 10;
         d3.select('#tooltip')
-            .style('left', (e.pageX + padding) + 'px')
-            .style('top', (e.pageY + padding) + 'px');
+            .style('left', (e.pageX + padding) )
+            .style('top', (e.pageY + padding));
     })
     .on('mouseleave', () => {
         d3.select('#tooltip')
