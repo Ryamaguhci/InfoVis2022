@@ -51,7 +51,7 @@ class ScatterPlot {
             
 
         self.yscale = d3.scaleLinear()
-            .range( [0,self.inner_height] );
+            .range( [self.inner_height, 0] );
             
 
         self.xaxis = d3.axisBottom( self.xscale )
@@ -123,7 +123,7 @@ class ScatterPlot {
             .on('mousemove', (e) => {
                 const padding = 10;
                 d3.select('#tooltip')
-                    .style('left', (e.pageX + padding) )
+                    .style('left', (e.pageX + padding))
                     .style('top', (e.pageY + padding));
             })
             .on('click', function(){
