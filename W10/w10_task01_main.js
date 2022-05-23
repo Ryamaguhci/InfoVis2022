@@ -13,38 +13,41 @@ d3.csv("https://Ryamaguhci.github.io/InfoVis2022/W08/w08_task01.csv")
         const bar_chart = new BarChart( config, data );
         
         bar_chart.update();
-        var original = data.slice();
-        console.log(original);
+        original = bar_chart.data.concat();
     
+        d3.select('#original')
+        .on('click', d => {
+        bar_chart.data = original.concat();
+        bar_chart.update();
+        });
 
         d3.select('#reverse')
         .on('click', d => {
-        data.reverse();
+        bar_chart.data.reverse();
+        console.log(bar_chart.data)
         bar_chart.update()
         });
         d3.select('#ascend')
         .on('click', d => {
-            data.sort(function(a, b) {
+            bar_chart.data.sort(function(a, b) {
                 if (a.value > b.value) {
                   return 1;
                 } else {
                   return -1;
                 }
               })
-        console.log(data)
-        console.log(original)
         bar_chart.update()
         });
         d3.select('#descend')
         .on('click', d => {
-            data.sort(function(a, b) {
+            bar_chart.data.sort(function(a, b) {
                 if (a.value < b.value) {
                   return 1;
                 } else {
                   return -1;
                 }
               })
-        console.log(data)
+
         bar_chart.update()
         });
     })
@@ -123,6 +126,7 @@ class BarChart {
         self.chart.selectAll("rect")
         .data(self.data)
         .join("rect")
+        .transition().duration(1000)
         .attr("x", 0)
         .attr("y", d => self.yscale(d.label) )
         .attr("width", d => self.xscale(d.value))
@@ -137,6 +141,6 @@ class BarChart {
             .call( self.xaxis );
         self.yaxis_group
             .call( self.yaxis );
-            console.log(self.data)
+
     }
 }
