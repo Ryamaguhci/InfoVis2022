@@ -11,17 +11,34 @@ d3.csv("https://Ryamaguhci.github.io/InfoVis2022/W08/w08_task01.csv")
             ylabel: 'fruit'
         };
         const bar_chart = new BarChart( config, data );
+        
         bar_chart.update();
+        var original = data.slice();
+        console.log(original);
+    
 
         d3.select('#reverse')
         .on('click', d => {
         data.reverse();
         bar_chart.update()
         });
-        d3.select('#a')
+        d3.select('#ascend')
         .on('click', d => {
             data.sort(function(a, b) {
                 if (a.value > b.value) {
+                  return 1;
+                } else {
+                  return -1;
+                }
+              })
+        console.log(data)
+        console.log(original)
+        bar_chart.update()
+        });
+        d3.select('#descend')
+        .on('click', d => {
+            data.sort(function(a, b) {
+                if (a.value < b.value) {
                   return 1;
                 } else {
                   return -1;
