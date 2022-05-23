@@ -127,8 +127,9 @@ class ScatterPlot {
                     .style('top', (e.pageY + padding));
             })
             .on('click', function(){
+                var randomColor = "rgb(" + (~~(256 * Math.random())) + ", " + (~~(256 * Math.random())) + ", " + (~~(256 * Math.random())) + ")" ;
                 d3.select(this)
-                .style('fill','blue')
+                .style('fill',randomColor);
             })
             .on('mouseleave', () => {
                 d3.select('#tooltip')
