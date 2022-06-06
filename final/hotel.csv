@@ -12,10 +12,8 @@ hotelName,hotelInformationUrl,hotelMinCharge,latitude,longitude,reviewCount,revi
 アパホテル＜京都駅前＞,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=2118,2430,125938.8,488728.38,3493,4.11,kyoto
 京都新阪急ホテル,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=1658,2700,125942.62,488738.35,3074,4.36,kyoto
 日本館,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=16244,1500,125947.71,488739.52,149,4.55,kyoto
-京都駅前　さと茂旅館,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=8258,,125943.85,488739.49,488,4.88,kyoto
 京都駅　元祖駅前　松本旅館,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=136089,3850,125943.15,488739.5,132,4.67,kyoto
 田中極楽堂ゲストハウス,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=164705,2350,125948.9,488739.83,14,5,kyoto
-アパホテル＜京都駅堀川通＞,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=32075,,125940.2,488722.58,10626,4.03,kyoto
 ホテル法華クラブ京都,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=122,2000,125942.94,488741.77,3805,4.43,kyoto
 ＭＯＮｄａｙ　Ａｐａｒｔ　Ｐｒｅｍｉｕｍ　京都七条堀川,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=181989,3102,125948.77,488718.38,17,4.71,kyoto
 リーガロイヤルホテル京都,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=108,4050,125939.41,488720.09,6148,4.26,kyoto
@@ -31,9 +29,7 @@ hotelName,hotelInformationUrl,hotelMinCharge,latitude,longitude,reviewCount,revi
 ホテル　ステーション京都・西館,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=20725,3800,125950.34,488746.55,1628,3.7,kyoto
 ｈｏｔｅｌ　ｔｏｕ　ｎｉｓｈｉｎｏｔｏｉｎ　ｋｙｏｔｏ,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=181326,2112,125960.05,488729.76,173,4.39,kyoto
 都ホテル　京都八条（旧：新・都ホテル）,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=1160,4100,125930.68,488731.3,6828,4.42,kyoto
-Ｋｙｏｔｏ　Ｈａｎａ　Ｈｏｓｔｅｌ　‐京都花宿‐,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=108082,,125951.56,488748.16,57,4,kyoto
 アパヴィラホテル＜京都駅前＞,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=29357,2500,125945,488749.64,3890,4.11,kyoto
-ホテル佐野家,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=8099,,125944.24,488749.78,396,4.87,kyoto
 京のおおぞら　褒華,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=167460,9000,125962.06,488730.08,15,5,kyoto
 京の宿　北海館　お花坊,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=19407,10000,125954.44,488747.96,152,5,kyoto
 ２０ＰＩＥＣＥＳ,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=181239,3232,125954.42,488748.17,17,4.5,kyoto
@@ -45,18 +41,14 @@ hotelName,hotelInformationUrl,hotelMinCharge,latitude,longitude,reviewCount,revi
 Ｒａｃｉｎｅ　ｈｏｍｅ　京都,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=153492,3400,125961.5,488749.57,13,5,kyoto
 京都ゲストハウス御旅庵（おたびあん）,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=151415,3000,125930.55,488710.62,59,4.5,kyoto
 羽う座　京都五条烏丸,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=172696,2250,125972.09,488743.54,13,4.2,gojo
-京都ゲストハウス栞庵（しおりあん）,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=145304,,125970.05,488742.99,114,3.88,gojo
 スーパーホテル京都・烏丸五条,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=80468,2500,125968.52,488744.14,1239,4.32,gojo
 ベッセルホテルカンパーナ京都五条（全室禁煙）,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=147994,57,125973.63,488750.7,1342,4.52,gojo
 ＴＨＥ　ＰＯＣＫＥＴ　ＨＯＴＥＬ（ザ・ポケットホテル）京都烏丸五条,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=179674,1148,125975.78,488747.94,79,4.28,gojo
 シタディーン京都　烏丸五条,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=104758,1936,125975.8,488748.49,553,4.22,gojo
 ウォーターマークホテル京都（ＨＩＳホテルグループ）,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=179875,2600,125973.94,488739.03,131,4.39,gojo
-Ｒｉｎｎ　Ｇｏｊｏ　Ｋａｒａｓｕｍａ（鈴ホテル　五条烏丸）,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=178300,,125972.13,488752.38,13,4.75,gojo
 烏丸六条ホテル,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=165178,2940,125966.81,488740,52,4.57,gojo
 ホテル　カンラ　京都,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=108734,7200,125964.87,488744.23,464,4.7,gojo
 オーベルジュ麻布,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=172672,11750,125977.03,488738.79,12,5,gojo
-ジャパンホテルズ五条室町　ＩＮ京都,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=165144,,125978.92,488740.16,22,4,gojo
-京町離宮　東本願寺,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=179857,,125970.69,488733.89,14,2,gojo
 ｓｅｑｕｅｎｃｅ　ＫＹＯＴＯ　ＧＯＪＯ,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=179606,2500,125981.01,488744.31,206,4.45,gojo
 Ｒａｃｉｎｅ　ｈｏｍｅ　京都,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=153492,3400,125961.5,488749.57,13,5,gojo
 ホテルインターゲート京都　四条新町,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=165176,3187,126008.7,488733.72,476,4.42,shijo
@@ -82,7 +74,6 @@ hotelName,hotelInformationUrl,hotelMinCharge,latitude,longitude,reviewCount,revi
 ＭＩＭＡＲＵ京都　新町三条,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=167590,3366,126021.26,488733.65,13,5,shijo
 東横イン京都四条烏丸,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=108345,4500,126002.7,488748.69,395,3.82,shijo
 相鉄フレッサイン　京都四条烏丸,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=158817,1640,125997.23,488741.8,398,4.54,shijo
-椛　京都三条,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=173207,,126021.29,488729.28,12,4.82,shijo
 ＡＢホテル京都四条堀川,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=166513,1400,126003.06,488719.09,1032,4.39,shijo
 東急ステイ京都三条烏丸（旧東急ステイ京都両替町通（三条烏丸））,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=162749,2310,126021.73,488742.34,325,4.6,shijo
 ＭＩＭＡＲＵ京都　堀川六角,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=166097,3200,126013.51,488717.59,12,5,shijo
@@ -95,6 +86,5 @@ hotelName,hotelInformationUrl,hotelMinCharge,latitude,longitude,reviewCount,revi
 ザ・ワンファイブ京都四条,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=167060,1260,126002.05,488715.23,189,4.55,shijo
 ザ・セレクトン京都堀川三条,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=172207,1802,126017.34,488715.35,235,4.03,shijo
 京都堀川イン　二条城前,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=838,2550,126020.97,488718.33,1684,4.38,shijo
-露天風呂人工温泉『四条烏丸の湯』カプセルホテル　安心お宿プレミアリゾート　京都四条烏丸店,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=167207,,125996.93,488752.95,301,3.75,shijo
 ザエディスターホテル京都二条ＣＯＭＩＣ＆ＢＯＯＫＳ,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=167472,2450,126021.92,488715.48,199,4.36,shijo
 メルディアステイ　大宮　ＫＡＲＩＧＡＮＥ,https://img.travel.rakuten.co.jp/image/tr/api/hs/dQ4dX/?f_no=172567,1550,125994.66,488715.32,45,4.39,shijo

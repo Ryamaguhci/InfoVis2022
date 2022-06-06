@@ -14,8 +14,8 @@ def rakuten_api():
 
         params = {
         "format":"json",
-        "latitude":"126008.91",
-        "longitude":"488734.83",
+        "latitude":"125971.00",
+        "longitude":"488745.24",
         "searchRadius":"0.5",
         "page": page,
         "applicationId":APP_ID
@@ -29,7 +29,7 @@ def rakuten_api():
 
         for hotel in hotels:
             hotel_info = hotel["hotel"][0]["hotelBasicInfo"]
-            if hotel_info['reviewCount'] is not None and hotel_info['reviewCount'] > 10 and hotel_info['reviewAverage'] != 0:
+            if hotel_info['reviewCount'] is not None and hotel_info['reviewCount'] > 10 and hotel_info['reviewAverage'] != 0 and hotel_info['hotelMinCharge'] is not None:
                 _df = pd.DataFrame(hotel_info, index=[index_num])
                 index_num+=1
                 df = df.append(_df)
@@ -40,5 +40,5 @@ df = rakuten_api()
 
 print(df.columns)
 
-df[['hotelName','hotelInformationUrl','hotelMinCharge', 'latitude', 'longitude', 'reviewCount','reviewAverage']].to_csv("hotel_shijo.csv",index=False, encoding = "shift-jis")
+df[['hotelName','hotelInformationUrl','hotelMinCharge', 'latitude', 'longitude', 'reviewCount','reviewAverage']].to_csv("hotel_gojo.csv",index=False, encoding = "shift-jis")
 
