@@ -72,7 +72,7 @@ class ScatterPlot {
         self.cvalue = d => d.station;
         self.xvalue = d => d.reviewAverage;
         self.yvalue = d => d.hotelMinCharge;
-        self.radius = d => d.reviewAverage
+        self.radius = d => d.reviewCountPlot
 
         const xmin = d3.min( self.data, self.xvalue );
         const xmax = d3.max( self.data, self.xvalue );
@@ -106,7 +106,7 @@ class ScatterPlot {
             .on('mouseover', (e,d) => {
                 d3.select('#tooltip')
                     .style('opacity', 1)
-                    .html(`<div class="tooltip-label", lang = 'ja'>${d.hotelName}</div>(${d.reviewAverage}, ${d.hotelMinCharge}, ${d.reviewCount})`);
+                    .html(`<div class="tooltip-label", lang = 'ja'>${d.hotelNo}</div>(${d.reviewAverage}, ${d.hotelMinCharge}, ${d.reviewCount})`);
             })
             .on('mousemove', (e) => {
                 const padding = 10;
@@ -214,7 +214,7 @@ class ScatterPlot {
             .on('mouseover', (e,d) => {
                 d3.select('#tooltip')
                     .style('opacity', 1)
-                    .html(`<div class="tooltip-label">${d.hotelName}</div>(${d.distance}, ${d.hotelMinCharge}, ${d.reviewCount})`);
+                    .html(`<div class="tooltip-label">${d.hotelNo}</div>(${d.distance}, ${d.hotelMinCharge}, ${d.reviewCount})`);
             })
             .on('mousemove', (e) => {
                 const padding = 10;
