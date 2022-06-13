@@ -183,7 +183,7 @@ class ScatterPlot {
         self.cvalue = d => d.station;
         self.xvalue = d => d.distance;
         self.yvalue = d => d.hotelMinCharge;
-
+        
         const xmin = d3.min( self.data, self.xvalue );
         const xmax = d3.max( self.data, self.xvalue );
         self.xscale.domain( [xmin, xmax] );
