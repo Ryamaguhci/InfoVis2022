@@ -72,7 +72,7 @@ class ScatterPlot {
         self.cvalue = d => d.station;
         self.xvalue = d => d.reviewAverage;
         self.yvalue = d => d.hotelMinCharge;
-        self.radius = d => d.reviewCountPlot
+        //self.radius = d => d.reviewCountPlot
 
         const xmin = d3.min( self.data, self.xvalue );
         const xmax = d3.max( self.data, self.xvalue );
@@ -93,10 +93,10 @@ class ScatterPlot {
             .join('circle');
 
         const circle_color = 'steelblue';
-        const circle_radius = d => self.radius(d);
+        const circle_radius = 3;
         
         circles
-            .attr("r", d => self.radius(d))
+            .attr("r", circle_radius)
             .attr("cx", d => self.xscale( self.xvalue(d) ) )
             .attr("cy", d => self.yscale( self.yvalue(d) ) )
             .attr("fill", d => self.config.cscale( self.cvalue(d) ) );
